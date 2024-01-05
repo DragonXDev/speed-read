@@ -25,3 +25,30 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+@keyframes slideUp {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateX(
+      -150vh
+    ); /* Moves the element up by 100% of the viewport height */
+  }
+}
+
+.animate-slide-up {
+  animation: slideUp 2s forwards;
+}
+
+.dim-transition {
+  transition: background-color 1s ease-in-out;
+}
+
+.dimmed {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Adjust the color and opacity as needed */
+}
